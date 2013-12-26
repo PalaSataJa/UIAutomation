@@ -1,11 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAutomationCases", "UIAutomationCases\UIAutomationCases.csproj", "{72EDD368-DDFD-4D9E-BECF-4149B9D19D7E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunnerGUI", "RunnerGUI\RunnerGUI.csproj", "{AAD19D97-AB7B-4ADD-961A-2C542F9DF515}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{E2E14D11-7195-4BD0-B871-6DC6F048FA66}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4308028C-2CA0-4B72-AD77-CE4420874945}"
 	ProjectSection(SolutionItems) = preProject
@@ -20,18 +16,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{72EDD368-DDFD-4D9E-BECF-4149B9D19D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72EDD368-DDFD-4D9E-BECF-4149B9D19D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72EDD368-DDFD-4D9E-BECF-4149B9D19D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72EDD368-DDFD-4D9E-BECF-4149B9D19D7E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AAD19D97-AB7B-4ADD-961A-2C542F9DF515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AAD19D97-AB7B-4ADD-961A-2C542F9DF515}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAD19D97-AB7B-4ADD-961A-2C542F9DF515}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAD19D97-AB7B-4ADD-961A-2C542F9DF515}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2E14D11-7195-4BD0-B871-6DC6F048FA66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2E14D11-7195-4BD0-B871-6DC6F048FA66}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2E14D11-7195-4BD0-B871-6DC6F048FA66}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2E14D11-7195-4BD0-B871-6DC6F048FA66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
