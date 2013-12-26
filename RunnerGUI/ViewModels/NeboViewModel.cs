@@ -65,15 +65,23 @@ namespace RunnerGUI.ViewModels
 			{
 				while (true)
 				{
-					using (NeboClicker clicker = new NeboClicker())
+					try
 					{
-						clicker.LogIn();
-						foreach (var action in Actions.Where(action => action.IsActive))
+						using (NeboClicker clicker = new NeboClicker())
 						{
-							action.ActionBody();
+							clicker.LogIn();
+							foreach (var action in Actions.Where(action => action.IsActive))
+							{
+								action.ActionBody();
+							}
 						}
+						Thread.Sleep(new TimeSpan(0, 5, 0));
+
+
 					}
-						Thread.Sleep(new TimeSpan(0, 2, 0));
+					catch
+					{
+					}
 				}
 			});
 		}
