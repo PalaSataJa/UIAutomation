@@ -61,17 +61,19 @@ namespace RunnerGUI.ViewModels
 
 		public void StartActions()
 		{
-		NeboClicker clicker = new NeboClicker();
-			clicker.LogIn();
 			ThreadPool.QueueUserWorkItem(o =>
 			{
 				while (true)
 				{
-					foreach (var action in Actions.Where(action => action.IsActive))
+					using (NeboClicker clicker = new NeboClicker())
 					{
-						action.ActionBody();
+						clicker.LogIn();
+						foreach (var action in Actions.Where(action => action.IsActive))
+						{
+							action.ActionBody();
+						}
 					}
-					Thread.Sleep(new TimeSpan(0,2,0));
+						Thread.Sleep(new TimeSpan(0, 2, 0));
 				}
 			});
 		}
