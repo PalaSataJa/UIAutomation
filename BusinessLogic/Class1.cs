@@ -2,6 +2,7 @@
 using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Remote;
 
 namespace BusinessLogic
 {
@@ -25,7 +26,7 @@ namespace BusinessLogic
 
 		public NeboClicker()
 		{
-			WebDriver = new FirefoxDriver();
+			WebDriver = new FirefoxDriver();//RemoteWebDriver(DesiredCapabilities.HtmlUnit());
 		}
 
 		public void ActionLoop()

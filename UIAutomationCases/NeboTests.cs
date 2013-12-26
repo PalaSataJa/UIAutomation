@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading;
 using BusinessLogic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -20,6 +22,13 @@ namespace UIAutomationCases
 				clicker.ActionLoop();
 			}
 
+		}
+
+		[TestMethod]
+		public void Bla()
+		{
+			Console.WriteLine(new Guid(MD5.Create().ComputeHash(Encoding.Default.GetBytes("Bla-bla-bla I'm tired"))).ToString());
+			Console.WriteLine(new Guid(MD5.Create().ComputeHash(Encoding.Default.GetBytes("Bla-bla-bla I want to go home and drink a beer"))).ToString());
 		}
 
 	}
